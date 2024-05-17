@@ -1,0 +1,109 @@
+/* HomePage.css */
+.homepage-container {
+    text-align: center;
+    padding-top: 20px; /* Afegim un marge a la part superior */
+  }
+  
+  .search-container {
+    margin-bottom: 10px;
+  }
+  
+  .search-input {
+    color: gray;
+    width: 700px; /* Ampliem el botó "Què busques" */
+    height: 30px;
+    border: 2px solid red; /* Requadre vermell */
+    margin: 0 auto 20px; /* Marge a la part inferior per separar els botons */
+    display: block; /* Fer que l'element tingui el seu propi espai */
+  }
+  
+  .button-container button {
+    height: 40px;
+    margin: 0;
+    flex-grow: 1;
+    min-width: 150px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border-right: 1px solid white; /* Afegeix una vora dreta blanca */
+  }
+  
+  .button-container button:first-child {
+    border-left: 1px solid white; /* Afegeix una vora esquerra blanca al primer botó */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cart-container {
+    position: absolute; /* Posiciona el text "Carrito" de forma absoluta respecte al contenidor */
+    top: 10%; /* Posiciona el text "Carrito" a la meitat del contenidor */
+    right: 320px; /* Posiciona el text "Carrito" a la dreta del contenidor */
+    transform: translateY(-50%); /* Centra verticalment el text "Carrito" */
+  }
+
+  .cart-link {
+    color: white; /* Canviem el color del text a blanc */
+    text-decoration: none; /* Elimina el subratllat */
+    font-size: 16px; /* Mida del text */
+  }
+
+  .button-container button:hover {
+    background-color: white; /* Canvia el fons a blanc quan es passa el ratolí per sobre */
+    color: black; /* Canvia el color del text a negre quan es passa el ratolí per sobre */
+  }
+  
+  .empty-space {
+    flex-grow: 1; /* L'espai buit creixerà per ocupar tot l'espai disponible */
+    background-color: black; /* Fons negre */
+  }
+  
+  .login-button, .register-button {
+    color: black; /* Canviem el color del text a negre */
+    font-size: 14px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0 5px; /* Afegim un petit marge entre els botons */
+    
+  }
+  
+  /* Posicionament dels botons adalt a la dreta */
+  .login-button-container {
+    position: absolute;
+    top: 25px;
+    right: 310px;
+  }
+
+  .new-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Canvia a 4 elements per línia */
+    gap: 10px; /* Ajusta l'espai entre els elements en totes les direccions */
+    padding: 20px 50px; /* Afegeix un marge més gran a l'esquerra i a la dreta */
+    max-width: 80%; /* Redueix l'amplada del contenidor a un 80% de l'amplada del seu contenidor pare */
+    margin: 0 auto; /* Centra el contenidor horitzontalment */
+  }
+  
+  .new-element {
+    flex-basis: calc(25% - 10px); /* Canvia a 4 elements per línia amb una mica d'espai entre ells */
+  }
+  
+  .square {
+    width: 100%;
+    padding-bottom: 100%; /* Això fa que el quadradet sigui quadrat */
+    background-color: #ccc; /* Color del quadradet */
+  }
+
+  /* HomePage.css */
+  .homepage-image {
+    width: 100px; /* Ajusta l'amplada de la imatge */
+    height: auto; /* Manté l'aspecte de la imatge */
+    position: absolute; /* Posiciona la imatge de forma absoluta respecte al contenidor */
+    top: -10px; /* Posiciona la imatge 50px des de la part superior del contenidor */
+    left: 475px; /* Posiciona la imatge 50px des de l'esquerra del contenidor */
+  }
+  
