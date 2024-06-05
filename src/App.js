@@ -1,9 +1,14 @@
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HomePage from './HomePage';
-import LoginPage from './LoginPage';
-import CartPage from './CartPage'; // Importa el component de la pàgina del carret de compra
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import LoginPage from './pages/LoginPage';
+import CartPage from './pages/CartPage';
+import HelpPage from './pages/HelpPage';
+import BoxingTab from './pages/BoxingTab';
+import SacsTab from './pages/SacsTab';
+import GuantsTab from './pages/GuantsTab';
+import AltresTab from './pages/AltresTab';
 
 function App() {
   return (
@@ -11,7 +16,12 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/cart" element={<CartPage />} /> {/* Afegeix una nova ruta per a la pàgina del carret de compra */}
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/help" element={<HelpPage />} />
+        <Route path="/boxa" element={<BoxingTab />} />
+        <Route path="/sacs" element={<SacsTab />} />
+        <Route path="/guants" element={<GuantsTab />} />
+        <Route path="/altres" element={<AltresTab />} />
       </Routes>
     </Router>
   );
